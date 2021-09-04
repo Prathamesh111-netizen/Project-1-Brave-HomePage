@@ -1,0 +1,115 @@
+body{
+    /* background-color:steelblue; */
+    /* margin: 0; */
+    /* background-repeat: no-repeat; */
+    background: url("https://source.unsplash.com/random/1600x1200");
+    font-family: "Poppins", sans-serif;
+    background-size: cover;
+    opacity: 1;
+}
+li{
+    list-style: none;
+}
+.grid-page{
+    display: grid;
+    grid-template-areas: 
+    "i i i i i i i i . . . t t t t"
+    "b b b b b b . . . . . . . . ."
+    "b b b b b b . . . . . . . . .";
+}
+.information-details{
+    grid-area: i;
+}
+.title-container{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    flex-wrap: wrap;
+}
+.title-container-item{
+    font-family: "Poppins", sans-serif;
+    margin: 20px;
+}
+.title-container-item span:first-child{
+   font-size: 2.75em;
+}
+#title-container-item1 span{
+    color: rgb(240, 138, 5);
+}
+#title-container-item2 span{
+    color: rgb(87, 53, 209);
+}
+#title-container-item3 span{
+    color: rgb(255, 255, 255);
+}
+.title-container-item div{
+    color: rgb(255, 255, 255);
+}
+
+.time-display{
+    grid-area: t;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.time-display-clock{
+    font-size: 5em;
+}
+
+.bookmarks-collection{
+    grid-area:b;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+
+}
+
+.bookmarks-first-row-list, .bookmarks-second-row-list{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: auto;
+}
+.bookmarks-first-row-list div ,.bookmarks-second-row-list div{
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.bookmarks-first-row-list span ,.bookmarks-second-row-list span{
+    margin: 5px;
+}
+
+.img-bookmark img{
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    width: 99%;
+    display: flex;
+    justify-content: space-around;
+}
+footer span{
+    padding: 10px;
+}
+footer img{
+    width: 30px;
+}
+
+#photo-info{
+    margin-right: auto;
+}
+#customise-button{
+    margin-left: auto;   
+}
